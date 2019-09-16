@@ -8,7 +8,10 @@ It should return "Hello World" HTTP response on a REST API.
 # Step 1
 Create a simple Dockerfile that starts your application.
 
-## Step 1.1
+## Step 1.2
+Add docker-compose.yml
+
+## Step 1.3
 Decouple jar name with `ARG`
 
 # Step 2
