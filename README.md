@@ -17,3 +17,8 @@ Decouple jar name with `ARG`
 # Step 2
 Introduce multistage build by adding gradle build
 
+# Step 2.1
+Use .dockerignore
+
+# Step 2.2
+Reuse gradle cache
