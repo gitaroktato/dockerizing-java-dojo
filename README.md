@@ -15,4 +15,5 @@ Add docker-compose.yml
 Decouple jar name with `ARG`
 
 # Step 2
-Introduce multistage build by adding 
+Introduce multistage build by adding gradle build
+
