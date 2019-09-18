@@ -4,3 +4,8 @@ services:
     build: .
     ports:
       - "8080:8080"
+    volumes:
+      - gradle-cache:/home/gradle/.gradle
+
+volumes:
+  gradle-cache:
