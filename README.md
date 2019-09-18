@@ -22,3 +22,16 @@ Use .dockerignore
 
 # Step 2.2
 Reuse gradle cache
+
+# Step 3
+Create custom JRE with `jlink`
+Commands are the following:
+```bash
+jdeps -s ./build/libs/demo-0.0.2-SNAPSHOT.jar
+```
+
+```bash
+jlink --module-path "%JAVA_HOME%\jmods";build\libs \
+      --add-modules java.base,java.logging,java.sql,java.naming,java.desktop,java.security.jgss,java.management,java.instrument \
+      --output jre
+```
