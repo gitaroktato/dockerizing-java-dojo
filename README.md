@@ -35,3 +35,13 @@ jlink --module-path "%JAVA_HOME%\jmods";build\libs \
       --add-modules java.base,java.logging,java.sql,java.naming,java.desktop,java.security.jgss,java.management,java.instrument \
       --output jre
 ```
+
+# Step 4
+Using jib for building the Docker image
+```bash
+gradlew jib -Dhttp.proxyPort=0 -Dhttps.proxyPort=0 --image=popnam/dockerizing-java-dojo
+```
+
+```bash
+gradlew jibDockerBuild -Dhttp.proxyPort=0 -Dhttps.proxyPort=0 --image=dockerizing-java-dojo
+```
