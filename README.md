@@ -54,3 +54,8 @@ eval $(minikube docker-env)
 skaffold init
 skaffold dev
 ```
+
+Access minikube service
+```bash
+minikube service app --url
+```
