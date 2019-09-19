@@ -1,0 +1,9 @@
+apiVersion: skaffold/v1beta13
+kind: Config
+build:
+  artifacts:
+  - image: app
+deploy:
+  kubectl:
+    manifests:
+    - src\main\kubernetes\app.yml

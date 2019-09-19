@@ -45,3 +45,12 @@ gradlew jib -Dhttp.proxyPort=0 -Dhttps.proxyPort=0 --image=popnam/dockerizing-ja
 ```bash
 gradlew jibDockerBuild -Dhttp.proxyPort=0 -Dhttps.proxyPort=0 --image=dockerizing-java-dojo
 ```
+
+# Step 5
+Using skaffold
+
+```bash
+eval $(minikube docker-env)
+skaffold init
+skaffold dev
+```
