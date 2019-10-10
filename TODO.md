@@ -8,4 +8,4 @@ docker run -v ~/IdeaProjects/dockerizing-java-dojo/target/demo-0.0.1-SNAPSHOT.ja
 m java-coding-dojo
 ```
 [/]	Cleaning up images, containers
-[]	Alpine images
+[/]	Alpine images
