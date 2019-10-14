@@ -1,9 +1,11 @@
 FROM openjdk:12-alpine
+ARG JAR_FILE=demo-0.0.2-SNAPSHOT.jar
+ENV JAR_FILE=${JAR_FILE}
 
 WORKDIR /usr/demo
-COPY ./target/demo-0.0.1-SNAPSHOT.jar ./
+COPY ./target/$JAR_FILE ./
 
 EXPOSE 8080
 
-ENTRYPOINT ["java"]
-CMD ["-jar", "-Xms950m", "-Xmx950m", "demo-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["sh", "-c"]
+CMD ["java -jar $JAR_FILE"]
