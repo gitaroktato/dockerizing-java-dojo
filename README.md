@@ -15,13 +15,13 @@ Add docker-compose.yml
 Decouple jar name with `ARG`
 
 # Step 2
-Introduce multistage build by adding gradle build
+Introduce multistage build by adding gradle/maven build
 
 # Step 2.1
 Use .dockerignore
 
 # Step 2.2
-Reuse gradle cache
+Reuse gradle/maven cache
 
 # Step 3
 Create custom JRE with `jlink`

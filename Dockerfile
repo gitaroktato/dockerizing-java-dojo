@@ -1,5 +1,5 @@
 ARG JAR_FILE=demo-0.0.2-SNAPSHOT.jar
-FROM openjdk:11-jdk AS build
+FROM openjdk:12-alpine AS build
 ARG JAR_FILE
 
 WORKDIR /usr/demo
