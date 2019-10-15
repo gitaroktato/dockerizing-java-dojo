@@ -36,6 +36,8 @@ jlink --module-path "%JAVA_HOME%\jmods";build\libs \
       --output jre
 ```
 
+Hint: OpenJDK [Dockerfile][https://github.com/AdoptOpenJDK/openjdk-docker/blob/master/12/jdk/alpine/Dockerfile.hotspot.releases.slim]
+
 # Step 4
 Using jib for building the Docker image
 ```bash
