@@ -1,0 +1,12 @@
+apiVersion: skaffold/v1beta15
+kind: Config
+build:
+  artifacts:
+    - image: dockerizing-java-dojo
+      jib: {}
+      context: .
+
+deploy:
+  kubectl:
+    manifests:
+    - src\main\kubernetes\app.yml
